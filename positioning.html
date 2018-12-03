@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    .box{
+        height:200px;
+        width:200px;
+    }
+    .static-box{
+        background-color: green;
+        /* the next 3 will do nothing because it's static */
+        position:static;
+        top:100px;
+        left:200px;
+        border-radius:50%;
+    }
+    .relative-box{
+        background-color: blue;
+        position:relative;
+        /* top:100px;
+        left:100px; */
+        border-radius-top:10px;
+        border-radius-bottom:50px;
+    }
+    .absolute-box{
+        background-color: purple;
+        position:absolute;
+        border-radius:10px;
+    }
+    .fixed-box{
+        background-color: black;
+        position:fixed;
+        z-index:2;
+    }
+    </style>
+</head>
+<body>
+    <h1>CSS Positioning has five options</h1>
+    <ol>
+        <li><a href="#static">Static</a>
+        </li>
+        <li>
+            <a href="#relative">relative</a>
+        </li>
+        <li>
+            <a href="#absolute">absolute</a>
+        </li>
+        <li>
+            <a href="#fixed">fixed</a>
+        </li>
+        <li>
+            <a href="#sticky">sticky</a>
+        </li>
+    </ol>
+<div id="static">
+    <h1>Static</h1>
+    <div class="static-box box">Static Box</div>
+</div>
+<div id="relative">
+    <h1>Relative</h1>
+<div class="relative-box box">Relative Box</div>
+</div>
+<div id="Absolute">
+    <h1>Absolute</h1>
+    <div class="absolute-box box">Absolute Box</div>
+</div>
+<div id="Fixed">
+        <h1>Fixed</h1>
+    <div class="fixed-box box">Fixed Box</div>
+    </div>
+</body>
+</html>
