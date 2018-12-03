@@ -8,30 +8,73 @@
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <script src="main.js"></script>
     <style>
+   
+    .text1{
+        width: 10%;
+        display:inline-block;
+        /* could do float, but causes a lot of unintended issues, like it gets 
+        covered over.. technically doesn't have a height and is "pseudo-invisible".
+        To fix the issue and make a float thing work, you would have to wrap the div
+        within a div that is not a float, like a block. */
+    }
+    .text2{
+        width: 15%;
+        display:inline-block;
+        /* to text align justified, do text-align:justified; */
+    }
     .jimsDiv{
-        display:inline; 
+        position:relative;
         /* (this ignores height and width).. decides how big is is based on its contents */
         /* width:100px; */
-        height:100px;
+        height:120px;
+        /* width:75%; */
+        /* margin-top:10px;
+        margin-bottom:25px;
+        margin-left:10px;
+        margin-right:25px; */
+        padding:10px;
         background-color:rgb(155, 202, 196)
     }
-    #jimsLi{
-        color:red;
+    .otherDiv{
+        position:absolute;
+        /* this won't work unless the parent (here, jimsDiv) is relative */
+        background-color: aquamarine;
+        width:10px;
+        height:10px;
     }
-    #jimsLi:hover{
-        color:maroon;
-    }
+        #one{
+            top:40px;
+            left:40px;
+
+        }
+        #two{
+            top:80px;
+            left:40px;
+        }
+        #three{
+            top: 80px;
+            left: 80px;
+        }
+        #four{
+        left: 80px;
+        top: 40px;
+        }
+
     </style>
 </head>
 <body>
+        <div class="text1">Hi I am a div</div>
+        <div class="text2">Hi I am another div</div>
     <div class="jimsDiv">
 <!-- div is meant as a utility to structure or grou pthings together in a similar place. Now the majority of blocks are divs 
 ul is a list selector, and li is a part of that list. make sure to visit the css diner -->
-sdlkjlkj
+
+    <div id="one" class="otherDiv"></div>
+    <div id="two" class="otherDiv"></div>
+    <div id="three" class="otherDiv"></div>
+    <div id="four" class="otherDiv"></div>
     </div>
     <header>
 
-    </header>
-    <li id="jimsLi">hi</li>
 </body>
 </html>
