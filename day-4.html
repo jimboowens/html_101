@@ -10,23 +10,42 @@
 
     <style>
         .jimsFlexBox{
+            height:400px;
             display:flex;
             /* flex-direction: places children in a row from left to right.. default option is l-r, but can be others
+            
             flex-wrap:; tells us whether the items will start a new row if the screen doesn't hold the total
-            justify-content:;
-            align-items:;
-            align-content:; 
+            
+            justify-content:; preserves the order and arrangement, but moves the children within the content
+            
+            align-items:; default is to stretch the height to the entirety of the parent, but flex-start will place it 
+            at the top of its content and end it at the end of its content. baseline is used basically only when 
+            mixing images and text; it centers it intuitively
+            
+            align-content:;  
+            
             https://demos.scotch.io/visual-guide-to-css3-flexbox-flexbox-playground/demos/
+            https://flexboxfroggy.com/
             */
-
+            background-color:lightgreen;
+            flex-direction:column;
+            flex-wrap:wrap;
+            align-items:center;
+            justify-content: center;/* this makes pictures with text look prettier*/
+            align-content:space-around;
+            /* flex-flow is a concatonation of flex direction and flex-wrap.. it literally is those two in the same line
+            that has the properties separated respectively by a space.  */
         }
+        /* img{
+            width:80px
+        } */
     </style>
 </head>
 <body>
     <div class="jimsFlexBox">
-        <h1>Hi folks!</h1>
-        <p>Hello again!!</p>
-
+        <h1>Hi folks, I'm a doggo!</h1>
+        <p>Woof! Woof again!!</p>
+        <img src="https://images.dog.ceo/breeds/bluetick/n02088632_2904.jpg" />
     </div>
 </body>
 </html>

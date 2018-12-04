@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bootstrap-css.css"/>
+    <script src="main.js"></script>
+    <style>
+    .row>div{
+        border:1px solid cyan;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1>Hello, I'm inside a column!</h1>
+            </div>
+            <div class="col-4 p-4">
+                <p>col 4!</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3 rounded">
+                col 3
+            </div>
+            <div class="col-3 m-4">
+                col 3
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-6 col-log-4 col-xl-3">
+                <div class="mt-2 px-3">
+                    changing row and padding
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-log-4 col-xl-3">changing row</div>
+        </div>
+    </div>
+</body>
+</html>
