@@ -8,12 +8,11 @@ if (hello == "suh dude"){
 } else if (hello == "Hello"){
     console.log("I totes get it.")
 }
-while (condition) {
+// while (condition) {
     
-}
-var arr=[]
-var j=0
-for (let i = 0; i < arr.length; i++) {
-    const j = arr[i];
-    
+// }
+var arr = []
+for (let i = 0; arr.length< 5; i++) {
+    arr.push("a");
+    console.log(arr, i)
 }
