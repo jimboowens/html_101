@@ -1,5 +1,5 @@
 console.dir(document)
-var dragon = document.getElementById(dragonDiv)
+var dragon = document.getElementById("dragonDiv")
 var bool = false
 while (bool != true){
     var decision = prompt(`Look out! There appears a wild dragon in your path! What would you like to do (fight or flight)? > `)
@@ -10,7 +10,7 @@ while (bool != true){
     }
 }
 if (decision == "fight"){
-    dragonDiv.innerHTML +=`
+    dragon.innerHTML +=`
     <img src="dragon-assets/dragon.png"/>
 `
 }else{
