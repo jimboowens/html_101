@@ -23,3 +23,14 @@ console.dir(document)
 // "get element by ID" is our savior. 
 var jim = document.getElementById("jimsDiv")
 console.log(jim)
+jim.innerHTML = "I just changed this text"
+// this is a more simple and easy to follow method to add things to the body than the following:
+
+// var newImage = document.createElement("img");
+// newImage.src = "https://placehold.it/300X300";
+// document.getElementById("jimsDiv").appendChild(newImage);
+// this works, but is far too complex and requires computation. The following is the replacement:
+
+jim.innerHTML += '<img src="https://placehold.it/200x200" />'
+var response = +prompt("I am a prompt")
+console.log(typeof response, response)
