@@ -17,12 +17,9 @@ while (gameOn != false){
     What would you like to do (fight or flight)? > `)
     if (decision != "fight" && decision != "flight"){
         alert("Invalid input! Please choose fight or flight.")
-    } else if (decision == "flight"){
-        alert (`you're a coward!`)
-    }
-    else {
+    } else if (decision == "fight") {
         dragon.innerHTML +=`<img src="dragon-assets/dragon.png"/>`
-    }
+    
     var bool = false
     while (bool!= true){
         var decision = prompt(`You have chosen to fight! Would you like a quick tutorial (y or n)? `)
@@ -40,8 +37,24 @@ while (gameOn != false){
     alert(`Here goes, brave soul!`)
     dragon.innerHTML = `<button class="button3">Roll Dice</button>`
     function rollDice(){
+        var validDice = false
+        while (validDice !=true){
+            var die1 = 10*math.random()
+            if (die1<7){
+                var die2 = 10*math.random()
+                if (die2<7){
+                    validDice = true
+                    return die1, die2
+                }
+            }
+        }
 
     }
-
+    }
+    else {
+        alert (`you're a coward!`)
+        gameOn = false
+    }
+alert(`you're done.`)
 
 }
